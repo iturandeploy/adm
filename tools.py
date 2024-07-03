@@ -1,7 +1,8 @@
 import pandas as pd
 import pyodbc
 import math
-import MySQLdb
+#import MySQLdb
+import pymysql
 
 # Define a função de conversão
 def convert_int_to_date(date_as_int):
@@ -13,7 +14,7 @@ def date_parser(date_as_int):
 
 def connection(database):
 
-    db = MySQLdb.connect(
+    db = pymysql.connect(
             host="10.100.0.55",       # Endereço do servidor MySQL
             user="renanrt",    # Seu nome de usuário MySQL
             passwd="Abcd1234",    # Sua senha MySQL
