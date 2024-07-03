@@ -1,7 +1,4 @@
 import pandas as pd
-import pyodbc
-import math
-#import MySQLdb
 import pymysql
 
 # Define a função de conversão
